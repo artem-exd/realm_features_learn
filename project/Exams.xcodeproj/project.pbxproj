@@ -23,6 +23,7 @@
 		9C6248371D0841DB0059FB4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6248351D0841DB0059FB4D /* LaunchScreen.storyboard */; };
 		9C62483F1D0841EE0059FB4D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9C62483E1D0841EE0059FB4D /* Podfile */; };
 		AC835E521D92D26600F8AF74 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC835E511D92D26600F8AF74 /* RealmConfig.swift */; };
+		AC835E541D92E22000F8AF74 /* SubjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC835E531D92E22000F8AF74 /* SubjectName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9C62483E1D0841EE0059FB4D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E066198C5D31A20C4390B14 /* Pods_Exams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC835E511D92D26600F8AF74 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
+		AC835E531D92E22000F8AF74 /* SubjectName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectName.swift; sourceTree = "<group>"; };
 		CCC64226554F703397D44742 /* Pods-Exams.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exams.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exams/Pods-Exams.release.xcconfig"; sourceTree = "<group>"; };
 		DD8614CAD6A1CF7437B46ACC /* Pods-Exams.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exams.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exams/Pods-Exams.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9C01BDEB1D08426A00534B0A /* Exam.swift */,
+				AC835E531D92E22000F8AF74 /* SubjectName.swift */,
 				AC835E511D92D26600F8AF74 /* RealmConfig.swift */,
 			);
 			path = Objects;
@@ -281,6 +284,7 @@
 				AC835E521D92D26600F8AF74 /* RealmConfig.swift in Sources */,
 				9C42DB891D16FEAF0068589D /* SubjectsViewController.swift in Sources */,
 				9C62482D1D0841DB0059FB4D /* AppDelegate.swift in Sources */,
+				AC835E541D92E22000F8AF74 /* SubjectName.swift in Sources */,
 				9C01BDED1D08426A00534B0A /* Exam.swift in Sources */,
 				9C42DB8C1D170B590068589D /* MarksViewController.swift in Sources */,
 				9C42DB871D16F9950068589D /* Exams.swift in Sources */,

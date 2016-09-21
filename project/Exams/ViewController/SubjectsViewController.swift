@@ -24,28 +24,31 @@ import UIKit
 import RealmSwift
 
 class SubjectsViewController: UITableViewController {
-
-  //MARK: - subjects from built-in realm
-
-  override func viewDidLoad() {
-
-  }
-
-  //MARK: - table view data source methods
-
-  //    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-  //        return subjects?.count ?? 0
-  //    }
-  //
-  //    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-  //        let subject = subjects![indexPath.row]
-  //
-  //        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
-  //        cell.textLabel!.text = subject.name
-  //        return cell
-  //    }
-
-  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-  }
+    //MARK: - subjects from built-in realm
+    var subjects: Results<SubjectName>?
+    
+    override func viewDidLoad() {
+        let realm = try! Realm(configuration: RealmConfig.Static.configuration)
+        subjects = realm.objects(SubjectName.self)
+    }
+    
+    //MARK: - table view data source methods
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return subjects?.count ?? 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let subject = subjects![indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
+        cell.textLabel!.text = subject.name
+        return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
